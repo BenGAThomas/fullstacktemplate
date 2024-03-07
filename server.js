@@ -1,4 +1,4 @@
-require('dotenv').config
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -8,7 +8,7 @@ const app = express();
 const port = process.env.PORT || 4000
 
 //Connect to MongoDB
-mongoose.connect(`mongodb+srv://BenjaminGAThomas:<password>@practicedb.a7xgvlc.mongodb.net/${process.env.MONGODB_DATABASE_NAME}?retryWrites=true&w=majority`)
+mongoose.connect(`mongodb+srv://BenjaminGAThomas:@practicedb.a7xgvlc.mongodb.net/${process.env.MONGODB_DATABASE_NAME}?retryWrites=true&w=majority&appName=PracticeDB`)
     .then(() => console.log('MongoDB Connected'))
     .catch(err => console.log(err))
 
@@ -27,7 +27,7 @@ app.use(express.json())
 //Set EJS as templating engine
 app.set('view engine','ejs')
 
-//ROUTES GO HERE
+//LOGIC GOes HERE
 
 app.listen(port, () => {
     console.log(`Server running on: http://localhost:${port}`)
