@@ -3,12 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <title>Document</title>
+    <!--css sheet isnt working-->
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Home</title>
 </head>
 <body>
     <header>
         <%- include('./partials/header') %>
+        <h1>Welcome to my StarWars gallery!</h1>
+        <p class="sub-header"><strong> Here I post all of my Star Wars pictures that I find on the web!</strong></p>
     </header>
+    <!-- Photo Carousel -->
+    <!-- photos not showing up for some reason-->
+    <div id="carousel">
+        <img src="/img/11 - MZhm2VI.jpg" class="active">
+        <img src="/img/25 - zQHUBi5.jpg">
+        <img src="/img/28 - 9Qc3jaJ.jpg">
+        <img src="/img/starwars (133).jpg">
+        <img src="/img/starwars (16).png">
+        <img src="/img/starwars (162).jpg">
+        <img src="/img/starwars (36).jpg">
+        <img src="/img/starwars (4).jpg">
+        <img src="/img/starwars (6).jpg">
+        <img src="/img/starwars (9).png">
+        <img src="/img/SW Vader.png">
+    </div>
+    <!--script tag might also not be working?-->
+    <script src="/js/script.js"></script>
 </body>
 </html>
